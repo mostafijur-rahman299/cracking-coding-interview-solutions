@@ -48,6 +48,22 @@ class LinkedList:
             previous = current
             
         print(unique_data)
+        
+    def remove_duplicate_nodes_no_buffer(self):
+        current = self.head
+        
+        while current:
+            prev_node = current
+            next_node = current.next
+            while next_node:
+                if current.data == next_node.data:
+                    prev_node.next = next_node.next
+                else:
+                    prev_node = prev_node.next
+                    
+                next_node = next_node.next
+                
+            current = current.next
             
 
 list1 = LinkedList()
