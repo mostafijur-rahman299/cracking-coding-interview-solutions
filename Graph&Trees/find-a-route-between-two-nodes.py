@@ -4,13 +4,13 @@ def has_route_dfs(graph, start_node, end_node):
     
     while queue:
         start_node = queue.pop(0)
-        visited.app(start_node)
+        visited.add(start_node)
         
         if start_node == end_node:
             return True
         
         for child in graph[start_node]:
-            if child no in visited:
+            if child not in visited:
                 queue.append(child)
         
     return False
