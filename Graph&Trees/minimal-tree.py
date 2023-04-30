@@ -10,7 +10,7 @@ def create_bst(arr, start, end):
 
     mid = (start + end) // 2
     node = TreeNode(arr[mid])
-    print(node.val)
+    print(node.val) 
     node.left = create_bst(arr, start, mid-1)
     node.left = create_bst(arr, mid+1, end)
     
