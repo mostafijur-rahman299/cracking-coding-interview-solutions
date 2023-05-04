@@ -10,11 +10,12 @@ def graph_bfs(bfs, start):
     visited = list()
     stack = [start]
     while stack:
-        vertext = stack.pop(0)
-        visited.append(vertext)
-        for child in graph[vertext]:
+        vertex = stack.pop(0)
+        visited.append(vertex)
+        for child in graph[vertex]:
             if child not in visited:
                 stack.append(child)
+                
     print(visited)
                 
 graph_bfs(graph, 'A')
