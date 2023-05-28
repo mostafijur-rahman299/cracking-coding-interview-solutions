@@ -26,7 +26,3 @@ def permutation_of_palindrome(string):
     return
 
 permutation_of_palindrome("tact coa")
-
-
-
-
