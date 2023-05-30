@@ -27,3 +27,8 @@ transpose_matrix = transposeMatrix(reversed_matrix) # Call matrix transpose func
 # Print data
 for row in transpose_matrix:
     print(row)
+    
+
+
+
+
