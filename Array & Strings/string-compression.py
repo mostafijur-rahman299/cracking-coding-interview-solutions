@@ -13,3 +13,4 @@ for index in range(len(string)):
         consecutive = 0
     
 print(compressed_str)
+
