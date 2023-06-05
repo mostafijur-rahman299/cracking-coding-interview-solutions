@@ -37,12 +37,13 @@ class LinkedList:
     def check_palindrome(self):
         reverse_list = self.reverse_list()
         current = self.head
+        
         pointer_2 = self.head.next # Loop through half of the list because if first half of the list is equal of it's reverse then last half of the lis the list must equal
         current2 = reverse_list.head
+        
         while pointer_2:
-            print(current.data)
             if current.data != current2.data:
-                print("Not a palidrome")
+                print("Not a palindrome")
                 break
             
             current = current.next

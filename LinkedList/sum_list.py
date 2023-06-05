@@ -25,7 +25,7 @@ class LinkedList:
         self.head = node
         node.next = head
     
-    @staticmethod
+    @staticmethod   
     def sum_list(list1, list2):
         current = list1.head
         current2 = list2.head
