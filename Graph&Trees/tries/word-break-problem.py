@@ -32,13 +32,43 @@ class Trie:
             else:
                 root = root.children[index]
                 
+    
+    def search(self, word):
+        current = self.root
+        
+        for char in word:
+            index = ord(char) - ord('a')
+            if not current.children[index]:
+                return False
+            current = current.children[index]
                 
-words = ["the", "a", "there", "their", "any"]
+        return True
+    
+    
+    def word_break(self, string):
+        if len(string) == 0:
+            return  # Base case for string length 1
+
+        for index in range(1, len(string) + 1):
+            first = string[0:index]
+            second = string[index:len(string)]
+            if self.search(first) and self.word_break(second):  # Recursive call on the instance
+                return True
+            print(second)
+
+        return False  # Return a value to indicate completion
+    
+    
+words = ["i", "like", "sam", "samsung", "mobile", "ice"]
+
 trie = Trie()
 
 for word in words:
     trie.insert_word(word)
 
     
-trie.print_nodes()
+# trie.print_nodes()
 
+
+
+trie.word_break("ilikesamsung")
