@@ -23,4 +23,4 @@ def build_tree(preorder):
 # Pre-order traversal: [2, 3, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1]
 preorder = [2, 3, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1]
 
-root = build_tree(preorder)
+tree_root = build_tree(preorder)
