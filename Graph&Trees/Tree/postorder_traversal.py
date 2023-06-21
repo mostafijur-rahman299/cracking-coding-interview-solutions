@@ -25,15 +25,15 @@ preorder = [2, 3, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1]
 
 tree_root = build_tree(preorder)
 
-def preorder_traversal(root):
+def postorder_traversal(root):
     
     # Base case
     if root is None:
         return
     
     # recursive case
-    preorder_traversal(root.left)
-    preorder_traversal(root.right)
+    postorder_traversal(root.left)
+    postorder_traversal(root.right)
     print(root.val, "-->")
 
-preorder_traversal(tree_root)
+postorder_traversal(tree_root)
