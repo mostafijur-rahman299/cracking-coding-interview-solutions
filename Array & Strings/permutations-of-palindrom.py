@@ -1,4 +1,3 @@
-
 # This is my solution to the problem
 def permutation_of_palindrome(string):
     dict_data = {}
