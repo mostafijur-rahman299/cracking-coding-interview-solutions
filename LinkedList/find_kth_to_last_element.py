@@ -29,7 +29,7 @@ class LinkedList:
             
         current.next = Node(value)
         
-    def print_kth_to_last_with_iterative(self, head, k):
+    def print_kth_to_last_with_recursive(self, head, k):
         if head is None:
             return 0
         index = self.print_kth_to_last_with_recursive(head.next, k) + 1

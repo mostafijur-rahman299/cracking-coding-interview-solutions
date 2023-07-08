@@ -16,7 +16,6 @@ reversed_matrix = reverseMatrix(matrix) # Call matrix reverse function
 
 # Transpose matrix
 def transposeMatrix(matrix):
-    new_matrix = []
     for i in range(len(matrix)):
         for j in range(i, len(matrix[i])):
             matrix[i][j], matrix[j][i] = matrix[j][i], matrix[i][j] # Swap data
