@@ -1,15 +1,4 @@
 def intersect_linked_lists(head1, head2):
-  """
-  Determines if two linked lists intersect.
-
-  Args:
-    head1: The head of the first linked list.
-    head2: The head of the second linked list.
-
-  Returns:
-    The intersecting node, or None if the two lists do not intersect.
-  """
-
   # Initialize two pointers, one for each linked list.
   p1 = head1
   p2 = head2
