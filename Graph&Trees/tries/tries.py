@@ -31,7 +31,7 @@ class Trie:
                 root.children[index] = Node()
             else:
                 root = root.children[index]
-                
+        root.end_of_word = True
     
     def search(self, word):
         current = self.root
