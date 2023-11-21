@@ -2,6 +2,7 @@
 
 ### Visual Representation
 ![Quick Sorting Image](https://raw.githubusercontent.com/mostafijur-rahman299/cracking-coding-interview-solutions/master/Sorting/quick-sort.jpg)
+__source__: https://www.youtube.com/watch?v=QXum8HQd_l4
 
 ### Explaination
 1. Increment i untill find greater than pivot
