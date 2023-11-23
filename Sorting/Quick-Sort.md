@@ -24,10 +24,10 @@ def partition(low, high):
         while a[j] > pivot:
             j -= 1
             
-        if a[i] < a[j]:
+        if a[i] > a[j]:
             a[i], a[j] = a[j], a[i]
         
-    a[low], a[j] = a[j], a[low]
+    a[low], a[j-1] = a[j-1], a[low]
     return j
     
 
